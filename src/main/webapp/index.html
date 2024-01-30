@@ -28,51 +28,46 @@
             font-size: 30px;
             color: #000000;
         }
-        form{
-            background-color: #fff;
+        .outer{
+        	display: flex;
+        	justify-content: space-around;
+        }
+        .form{
+        	background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             width: 300px;
             text-align: center;
-            margin : auto ; 
         }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .operations{
+        	background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
         }
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: #fff;
-            cursor: pointer;
+        a{
+        	text-decoration: none;
+        	color: #000000;
         }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        input[type="reset"] {
-            background-color: #f44336;
-            color: #fff;
-            cursor: pointer;
-        }
-        input[type="reset"]:hover {
-            background-color: #d32f2f;
-        }
-        
+        a:hover{
+        	color: #0000ff;
+        }        
 	</style>
 </head>
 <body>
 	<h1>Java Project</h1>
-	<h2> learning servlets</h2>
-	<h3>learning jsp</h3>
-	<br> <br> <br>
-	<form action="N1" method = "post">
-		<input type="number" name="n1" placeholder="enter first number">
-		<input type="number" name="n2" placeholder="enter second number">
-		<input type="submit" value="submit">
-	</form>
+	<h2> learning Servlets</h2>
+	<h3>learning JSP</h3>
+	 <div class = "outer">
+	 		<div class = "form">
+	 			<p><a href = "registration.html">Fill the form</a></p>
+	 		</div>
+	 		<div class = "operations">
+	 			<p><a href = "inputNumbers.html">Do Arithmetic Operations</a></p>
+	 		</div>
+	 </div>
 </body>
 </html>       

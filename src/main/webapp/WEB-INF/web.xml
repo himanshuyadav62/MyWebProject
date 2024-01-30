@@ -11,42 +11,32 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>FirstServlet</display-name>
-    <servlet-name>FirstServlet</servlet-name>
-    <servlet-class>com.example.FirstServlet</servlet-class>
+    <display-name>registrationDetails</display-name>
+    <servlet-name>registrationDetails</servlet-name>
+    <servlet-class>com.example.registrationDetails</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>FirstServlet</servlet-name>
-    <url-pattern>/FirstServlet</url-pattern>
+    <servlet-name>registrationDetails</servlet-name>
+    <url-pattern>/registrationDetails</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>ReqDispatcher</display-name>
-    <servlet-name>ReqDispatcher</servlet-name>
-    <servlet-class>com.example.ReqDispatcher</servlet-class>
+    <display-name>displayAttrbResults</display-name>
+    <servlet-name>displayAttrbResults</servlet-name>
+    <servlet-class>com.example.displayAttrbResults</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ReqDispatcher</servlet-name>
-    <url-pattern>/ReqDispatcher</url-pattern>
+    <servlet-name>displayAttrbResults</servlet-name>
+    <url-pattern>/displayAttrbResults</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>N2</display-name>
-    <servlet-name>N2</servlet-name>
-    <servlet-class>com.example.N2</servlet-class>
+    <display-name>setAtrributeArithmaticServlet</display-name>
+    <servlet-name>setAtrributeArithmaticServlet</servlet-name>
+    <servlet-class>com.example.setAtrributeArithmaticServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>N2</servlet-name>
-    <url-pattern>/N2</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>N1</display-name>
-    <servlet-name>N1</servlet-name>
-    <servlet-class>com.example.N1</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>N1</servlet-name>
-    <url-pattern>/N1</url-pattern>
+    <servlet-name>setAtrributeArithmaticServlet</servlet-name>
+    <url-pattern>/setAtrributeArithmaticServlet</url-pattern>
   </servlet-mapping>
 </web-app>

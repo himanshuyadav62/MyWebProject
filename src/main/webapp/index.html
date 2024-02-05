@@ -5,7 +5,7 @@
 	<title>main page of java project</title>
 	<style>
 		body{
-			background-color: #f4f4f4;
+			background-color: rgb(128, 128, 64);
             margin: 0;
             padding: 0;
             display: block;
@@ -30,27 +30,25 @@
         }
         .outer{
         	display: flex;
-        	justify-content: space-around;
+        	flex-wrap :wrap; 
+        	
         }
-        .form{
-        	background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-        }
+       
         .operations{
+             flex : 0 0 calc(30% - 10px);
+            margin:5px; 
         	background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             width: 300px;
             text-align: center;
+            background-color: rgb(100, 128, 64);
         }
         a{
+           font-size : 20px;
         	text-decoration: none;
-        	color: #000000;
+        	color:  #000000;
         }
         a:hover{
         	color: #0000ff;
@@ -61,13 +59,28 @@
 	<h1>Java Project</h1>
 	<h2> learning Servlets</h2>
 	<h3>learning JSP</h3>
-	 <div class = "outer">
-	 		<div class = "form">
+	<div class = "outer">
+	 		<div class = "operations">
 	 			<p><a href = "registration.html">Fill the form</a></p>
 	 		</div>
 	 		<div class = "operations">
 	 			<p><a href = "inputNumbers.html">Do Arithmetic Operations</a></p>
-	 		</div>
+	 		</div> 
+			<div class="operations">
+				<p><a href="cookie.html">Cookie</a></p>
+			</div>
+			<div class="operations">
+				<p><a href="registrationAjax.jsp">RegistrationAJAX</a></p>
+			</div>	
+			<div class="operations">
+                <p><a href="jspPage1.jsp">jsp page 1</a></p>
+            </div>	
+            <div class="operations">
+            	<p><a href="urlRewriting.jsp">url Rewriting</a></p>
+            </div>
+			<div class="operations">
+				<p><a href="filters.jsp">filters</a></p>
+			</div>
 	 </div>
 </body>
-</html>       
+</html>        

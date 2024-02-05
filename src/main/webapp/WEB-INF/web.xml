@@ -39,4 +39,54 @@
     <servlet-name>setAtrributeArithmaticServlet</servlet-name>
     <url-pattern>/setAtrributeArithmaticServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>cookieServlet1</display-name>
+    <servlet-name>cookieServlet1</servlet-name>
+    <servlet-class>com.example.cookieServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cookieServlet1</servlet-name>
+    <url-pattern>/cookieServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>cookieServlet2</display-name>
+    <servlet-name>cookieServlet2</servlet-name>
+    <servlet-class>com.example.cookieServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cookieServlet2</servlet-name>
+    <url-pattern>/cookieServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>signUp</display-name>
+    <servlet-name>signUp</servlet-name>
+    <servlet-class>com.example.signUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signUp</servlet-name>
+    <url-pattern>/signUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>urlRewServlet1</display-name>
+    <servlet-name>urlRewServlet1</servlet-name>
+    <servlet-class>com.example.urlRewServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>urlRewServlet1</servlet-name>
+    <url-pattern>/urlRewServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UrlRewServlet2</display-name>
+    <servlet-name>UrlRewServlet2</servlet-name>
+    <servlet-class>com.example.UrlRewServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UrlRewServlet2</servlet-name>
+    <url-pattern>/UrlRewServlet2</url-pattern>
+  </servlet-mapping>
 </web-app>

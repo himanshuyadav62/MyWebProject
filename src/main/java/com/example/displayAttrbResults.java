@@ -14,7 +14,7 @@ public class displayAttrbResults extends HttpServlet {
 
 	
 	// get forwaded responce from setAttributeArithmaticsServlet.html
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		// call processRequest method to display the attribtes
 		processRequest(request, response);
 	}

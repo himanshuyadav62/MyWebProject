@@ -26,7 +26,7 @@ public class signUp extends HttpServlet {
 	    out.println("<html><body>");
 	  
 	    // connection to database
-	     out.println(name); 
+	    out.println("<h1>Welcome, " + name + "!</h1>");
 	     out.println("<br>");
 	     System.out.println(System.getProperty("java.class.path"));
 	    try {
@@ -40,7 +40,7 @@ public class signUp extends HttpServlet {
 				ps.setString(2, email);
 				ps.setString(3, password);
 				ps.executeUpdate();
-				out.println("<h1>data submitted successfully<h1>"); 
+				out.println("<h3>you are registererd successfully<h3>"); 
 			} catch (SQLException e) {
 				out.println("connection failed"); 
 				e.printStackTrace();
@@ -51,7 +51,34 @@ public class signUp extends HttpServlet {
 				out.println(e); 
 				out.println("<h1>data not submitted<h1>");
 			}
+	    out.println("<br>"); 
+	    out.println("<a href='addBooks.jsp'> buy  books</a>"); 
+	    out.println("<br>"); 
+	    // fetching the data of users from database and show the registered users 
+	    try {
+        	Class.forName("com.mysql.cj.jdbc.Driver");
+        	try {
+        		    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users","root","Himanshu@2001");
+	                String s = "select * from user_details";
+	                PreparedStatement ps = con.prepareStatement(s);
+	                java.sql.ResultSet rs = ps.executeQuery();
+	                out.println("<br><br><br><br>");
+	                out.println("<h2>Registered users are:</h2>");
+	                out.println("<br>");
+	                while(rs.next()) {
+	                	out.print("<span style=\"margin:10px;\">"+rs.getString(1)+"</span>");
+	                	out.print("<span style=\"margin:10px;\">"+rs.getString(2)+"</span>");              
+	                	out.print("<br>");
+	                }
+        	}
+        	catch (SQLException e) {
+        		out.println("connection failed");
+        	}
+		}
+	    catch (ClassNotFoundException e) {
+	    	out.println(e);
+	    }
 	    out.println("</body>");
-	    out.println("</html>");   
+		out.println("</html>");  
 	}
 }
